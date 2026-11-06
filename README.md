@@ -142,3 +142,14 @@ curl http://localhost:8000/api/v1/mediciones/fuente
 Para ver el código en un punto del historial: `git log --oneline` y `git checkout <hash>`.
 
 **Para clase:** los alumnos trabajan con el [cuaderno de trabajo](docs/cuaderno-alumno.md) (también en `/guia` con la app corriendo), con actividades sin respuestas. La [guía docente](docs/guia-docente.md) tiene el detalle técnico, las respuestas verificadas y una secuencia de clases.
+
+## Experimento adicional: pronóstico de ventas
+
+El [experimento del issue #2](experiments/sales_forecast/README.md) compara una
+regla de referencia, regresión lineal y bosque aleatorio para estimar unidades
+diarias por producto con datos públicos de UCI. Es un experimento independiente
+del identificador NILM: no usa consumo eléctrico ni altera los endpoints de la
+API. Los datos brutos no se versionan; el informe, las métricas y el modelo
+entrenado están en `experiments/sales_forecast/`.
+
+El flujo de ramas se describe en [Control de versiones](docs/control-versiones.md).
